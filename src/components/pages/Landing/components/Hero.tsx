@@ -23,60 +23,60 @@ const Hero: FC = () => {
   };
 
   return (
-    <Stack mt='24px' position='relative'>
-      <img
-        src={HeroBackground}
-        alt='hero-background'
-        style={{
-          width: '100%',
-          maxWidth: '1392px',
-          maxHeight: '694px',
-          borderRadius: '32px',
-          margin: '0 auto',
-          minHeight: isMdUp ? 'unset' : '505px',
-        }}
-        loading='lazy'
-      />
+    <Stack>
       <Stack
-        p='24px'
-        position='absolute'
-        width='100%'
-        sx={{ top: '40px' }}
-        gap='24px'
-        color='primary-fixed'
-        alignItems='center'
-        textAlign='center'
+        sx={{
+          backgroundImage: `url(${HeroBackground})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+        borderRadius={{ sm: '32px' }}
+        minHeight={isMdUp ? '694px' : '505px'}
       >
-        <Typography variant={getVariant()}>
-          معامله ارز دیجیتال و جابجایی بین‌المللی فیات
-        </Typography>
-        <Typography
-          variant={isSmUp ? 'body-large' : 'body-medium'}
-          maxWidth='684px'
+        <Stack
+          p={{ lg: '24px', md: '20px', xs: '16px' }}
+          width='100%'
+          gap='24px'
+          color='primary-fixed'
+          alignItems='center'
+          textAlign='center'
+          mt='40px'
         >
-          در آرسونیکس، ارزهای دیجیتال یا ارزهای رایج مانند دلار، پوند، لیر و
-          ریال را سریع و امن معامله کنید و به‌راحتی ارزهای رایج را از یک کشور به
-          کشور دیگر منتقل کنید.
-        </Typography>
-        <Button variant='contained' sx={{ borderRadius: '12px', p: '12px' }}>
-          <Typography variant='label-large' color='on-primary'>
-            همین حالا امتحان کنید
+          <Typography variant={getVariant()}>
+            معامله ارز دیجیتال و جابجایی بین‌المللی فیات
           </Typography>
-        </Button>
-        <Stack maxWidth='1155px'>
-          <img
-            src={HeroImage}
-            alt='hero-image'
-            style={{
-              borderRadius: '24px',
-              marginTop: '44px',
-              boxShadow:
-                '0 40px 80px 0 rgba(3, 4, 27, 0.15), 0 8px 20px 0 rgba(0, 0, 0, 0.15)',
-              width: '100%',
-            }}
-            loading='lazy'
-          />
+          <Typography
+            variant={isSmUp ? 'body-large' : 'body-medium'}
+            maxWidth='684px'
+          >
+            در آرسونیکس، ارزهای دیجیتال یا ارزهای رایج مانند دلار، پوند، لیر و
+            ریال را سریع و امن معامله کنید و به‌راحتی ارزهای رایج را از یک کشور
+            به کشور دیگر منتقل کنید.
+          </Typography>
+          <Button variant='contained' sx={{ borderRadius: '12px', p: '12px' }}>
+            <Typography variant='label-large' color='on-primary'>
+              همین حالا امتحان کنید
+            </Typography>
+          </Button>
         </Stack>
+      </Stack>
+      <Stack
+        maxWidth='1155px'
+        mx='auto'
+        px={{ md: '60px', xs: '30px' }}
+        mt={{ md: '-350px', xs: '-161px' }}
+      >
+        <img
+          src={HeroImage}
+          alt='hero-image'
+          style={{
+            borderRadius: '24px',
+            boxShadow:
+              '0 40px 80px 0 rgba(3, 4, 27, 0.15), 0 8px 20px 0 rgba(0, 0, 0, 0.15)',
+            width: '100%',
+          }}
+          loading='lazy'
+        />
       </Stack>
     </Stack>
   );

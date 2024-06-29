@@ -24,6 +24,7 @@ const Navbar: FC<{ setIsDrawerOpen: Dispatch<SetStateAction<boolean>> }> = ({
       justifyContent='space-between'
       alignItems='center'
       width='100%'
+      p={{ xs: '16px', sm: '20px', md: '24px' }}
     >
       <Stack
         direction='row'

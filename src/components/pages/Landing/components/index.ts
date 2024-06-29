@@ -1,5 +1,6 @@
 import Drawer from './Drawer';
-import Navbar from './Navbar';
 import Hero from './Hero';
+import Navbar from './Navbar';
+import SpotRate from './SpotRate';
 
-export { Drawer, Navbar, Hero };
+export { Drawer, Hero, Navbar, SpotRate };

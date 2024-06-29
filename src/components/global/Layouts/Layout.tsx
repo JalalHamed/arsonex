@@ -7,11 +7,7 @@ const Layout: FC<{ id: TLayouts; children: ReactNode }> = ({
   children,
 }) => {
   if (id === 'Landing')
-    return (
-      <Stack bgcolor='surface-container-lowest' padding='24px'>
-        {children}
-      </Stack>
-    );
+    return <Stack bgcolor='surface-container-lowest'>{children}</Stack>;
   return <>{children}</>;
 };
 
