@@ -1,4 +1,8 @@
+import { PaletteMode } from '@mui/material';
+
 const lightPalette = {
+  mode: 'light' as PaletteMode,
+
   primary: { main: '#0057CE' },
   'on-primary': '#FFFBFE',
   'primary-container': '#DAE2FF',

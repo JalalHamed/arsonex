@@ -1,4 +1,8 @@
+import { PaletteMode } from '@mui/material';
+
 const darkPalette = {
+  mode: 'dark' as PaletteMode,
+
   primary: { main: '#B1C5FF' },
   'on-primary': '#002C70',
   'primary-container': '#00419E',

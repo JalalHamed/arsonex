@@ -1,4 +1,4 @@
-import { Providers } from 'components';
+import { Providers } from 'components/global';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
