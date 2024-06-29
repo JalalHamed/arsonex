@@ -45,7 +45,7 @@ export const FOOTER_LINKS = [
     ],
   },
   {
-    title: 'آرسونیکس',
+    title: 'امکانات',
     links: [
       { title: 'معامله سریع تک نرخی' },
       { title: 'واریز و برداشت بین‌المللی' },

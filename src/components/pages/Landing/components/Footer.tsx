@@ -34,7 +34,7 @@ const Footer: FC = () => {
           </Stack>
           <Stack direction='row' gap='4px' mt='-4px'>
             {SOCIAL_MEDIAS.map((item) => (
-              <Icon id={item} style={{ cursor: 'pointer' }} />
+              <Icon key={item} id={item} style={{ cursor: 'pointer' }} />
             ))}
           </Stack>
         </Stack>

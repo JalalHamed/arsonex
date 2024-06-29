@@ -27,8 +27,8 @@ export default function Telegram({ ...rest }: SvgIconProps) {
           y2='30.822'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#2AABEE' />
-          <stop offset='1' stop-color='#229ED9' />
+          <stop stopColor='#2AABEE' />
+          <stop offset='1' stopColor='#229ED9' />
         </linearGradient>
         <clipPath id='clip0_3306_17083'>
           <rect
