@@ -22,3 +22,35 @@ export const SPOT_RATE_FILTERS = [
   { value: 'most_popular', label: 'محبوب‌ترین' },
   { value: 'newest', label: 'جدیدترین' },
 ];
+
+export const SOCIAL_MEDIAS = ['Telegram', 'X', 'Instagram', 'LinkedIn'];
+
+export const FOOTER_LINKS = [
+  {
+    title: 'آرسونیکس',
+    links: [
+      { title: 'درباره ما' },
+      { title: 'تماس با ما' },
+      { title: 'کارمزدها' },
+      { title: 'قوانین و مقررات' },
+    ],
+  },
+  {
+    title: 'راهنمای استفاده',
+    links: [
+      { title: 'مرکز راهنمایی' },
+      { title: 'معامله ارز دیجیتال' },
+      { title: 'معامله فیات دیجیتال' },
+      { title: 'احراز هویت فوری' },
+    ],
+  },
+  {
+    title: 'آرسونیکس',
+    links: [
+      { title: 'معامله سریع تک نرخی' },
+      { title: 'واریز و برداشت بین‌المللی' },
+      { title: 'آروسونیکس کارت', note: 'بزودی' },
+      { title: 'کسب درآمد', note: 'تا سقف %30' },
+    ],
+  },
+];

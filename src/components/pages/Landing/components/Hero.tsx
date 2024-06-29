@@ -64,7 +64,7 @@ const Hero: FC = () => {
         maxWidth='1155px'
         mx='auto'
         px={{ md: '60px', xs: '30px' }}
-        mt={{ md: '-350px', xs: '-161px' }}
+        mt={{ md: '-350px', xs: '-100px' }}
       >
         <img
           src={HeroImage}

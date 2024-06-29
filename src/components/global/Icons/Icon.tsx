@@ -2,17 +2,24 @@ import { SvgIconProps } from '@mui/material';
 import {
   Blog,
   Close,
+  CopyRight,
   DecreaseChart,
+  Email,
   Hamburger,
   IncreaseChart,
+  Instagram,
+  LinkedIn,
+  Location,
   Logo,
   LogoSolo,
   Markets,
   Moon,
   Phone,
   Register,
+  Telegram,
   Tether,
   Toman,
+  X,
 } from './components';
 import { TIcons } from './types';
 
@@ -34,6 +41,13 @@ const Icon = ({ ...rest }: SvgIconProps) => {
           Tether: <Tether {...rest} />,
           IncreaseChart: <IncreaseChart {...rest} />,
           DecreaseChart: <DecreaseChart {...rest} />,
+          Email: <Email {...rest} />,
+          Location: <Location {...rest} />,
+          Telegram: <Telegram {...rest} />,
+          X: <X {...rest} />,
+          Instagram: <Instagram {...rest} />,
+          LinkedIn: <LinkedIn {...rest} />,
+          CopyRight: <CopyRight {...rest} />,
         }[rest.id as TIcons]
       }
     </>

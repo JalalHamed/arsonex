@@ -12,3 +12,10 @@ export type TIcons =
   | 'Tether'
   | 'IncreaseChart'
   | 'DecreaseChart'
+  | 'Email'
+  | 'Location'
+  | 'Telegram'
+  | 'X'
+  | 'Instagram'
+  | 'LinkedIn'
+  | 'CopyRight';

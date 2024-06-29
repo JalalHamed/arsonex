@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material';
 import { Layout } from 'components/global';
 import { FC, useState } from 'react';
-import { Drawer, Hero, Navbar, SpotRate } from './components';
+import { Drawer, Footer, Hero, Navbar, SpotRate } from './components';
 
 const Landing: FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
@@ -19,6 +19,7 @@ const Landing: FC = () => {
       >
         <Hero />
         <SpotRate />
+        <Footer />
       </Stack>
     </Layout>
   );

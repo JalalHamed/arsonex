@@ -172,6 +172,7 @@ const SpotRate: FC = () => {
                         style={{ borderRadius: '50px' }}
                         width='48px'
                         height='48px'
+                        loading='lazy'
                       />
                       <Stack gap='4px'>
                         <Typography color='on-surface' variant='label-large'>
