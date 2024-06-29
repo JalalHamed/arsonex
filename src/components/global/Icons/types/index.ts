@@ -7,4 +7,8 @@ export type TIcons =
   | 'LogoSolo'
   | 'Blog'
   | 'Markets'
-  | 'Moon';
+  | 'Moon'
+  | 'Toman'
+  | 'Tether'
+  | 'IncreaseChart'
+  | 'DecreaseChart'

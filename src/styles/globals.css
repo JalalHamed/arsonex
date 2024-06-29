@@ -55,3 +55,7 @@ a {
 svg {
   max-height: 100%;
 }
+
+.MuiTableCell-root {
+  border: none !important;
+}

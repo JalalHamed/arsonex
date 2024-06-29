@@ -1,4 +1,4 @@
-import { Switch, styled } from '@mui/material';
+import { Switch, Tabs, styled } from '@mui/material';
 
 export const CustomSwitch = styled(Switch)(({ theme }) => ({
   width: 56,
@@ -41,3 +41,18 @@ export const CustomSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: '100px',
   },
 }));
+
+export const ContainedTabs = styled(Tabs)({
+  '& .MuiTabs-indicator': {
+    minHeight: '48px',
+    borderRadius: '8px',
+    backgroundColor: 'rgba(0, 0, 0, 0.08)',
+  },
+  '& .MuiTabs-flexContainer': {
+    minHeight: '48px',
+    gap: '8px',
+  },
+  '& .MuiTabs-scroller': {
+    height: '100%',
+  },
+});

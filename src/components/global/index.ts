@@ -1,6 +1,6 @@
 import Icon from './Icons/Icon';
 import Layout from './Layouts/Layout';
 import Providers from './Providers/Providers';
-import { CustomSwitch } from './styled';
+import { ContainedTabs, CustomSwitch } from './styled';
 
-export { CustomSwitch, Icon, Layout, Providers };
+export { ContainedTabs, CustomSwitch, Icon, Layout, Providers };
