@@ -1,4 +1,11 @@
-import { Button, IconButton, Stack, Typography, useTheme } from '@mui/material';
+import {
+  Button,
+  IconButton,
+  Stack,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 import { CustomSwitch, Icon } from 'components/global';
 import { Dispatch, FC, SetStateAction } from 'react';
 import { useThemeModeAtom } from 'state';
@@ -7,12 +14,23 @@ import { NAVBAR_BUTTONS } from '../constants';
 const Navbar: FC<{ setIsDrawerOpen: Dispatch<SetStateAction<boolean>> }> = ({
   setIsDrawerOpen,
 }) => {
-  const { palette } = useTheme();
+  const { palette, breakpoints } = useTheme();
   const [themeMode, setThemeMode] = useThemeModeAtom();
+  const isMidMdUp = useMediaQuery(breakpoints.up(1120));
 
   return (
-    <Stack direction='row' justifyContent='space-between' alignItems='center'>
-      <Stack direction='row' alignItems='center' gap='4px'>
+    <Stack
+      direction='row'
+      justifyContent='space-between'
+      alignItems='center'
+      width='100%'
+    >
+      <Stack
+        direction='row'
+        alignItems='center'
+        gap='4px'
+        flex={isMidMdUp ? 1 : 0.39}
+      >
         <IconButton
           sx={{ display: { md: 'none' } }}
           onClick={() => setIsDrawerOpen(true)}
@@ -25,7 +43,13 @@ const Navbar: FC<{ setIsDrawerOpen: Dispatch<SetStateAction<boolean>> }> = ({
           onClick={() => window.location.replace('/')}
         />
       </Stack>
-      <Stack direction='row' gap='8px' display={{ xs: 'none', md: 'flex' }}>
+      <Stack
+        direction='row'
+        gap='8px'
+        display={{ xs: 'none', md: 'flex' }}
+        flex={1}
+        justifyContent='center'
+      >
         {NAVBAR_BUTTONS.map((button) => (
           <Button key={button.title} sx={{ minWidth: '80px' }}>
             <Typography variant='label-large' color='on-surface'>
@@ -34,7 +58,13 @@ const Navbar: FC<{ setIsDrawerOpen: Dispatch<SetStateAction<boolean>> }> = ({
           </Button>
         ))}
       </Stack>
-      <Stack direction='row' gap='16px' alignItems='center'>
+      <Stack
+        direction='row'
+        gap='16px'
+        alignItems='center'
+        flex={1}
+        justifyContent='flex-end'
+      >
         <CustomSwitch
           sx={{ display: { xs: 'none', sm: 'flex' } }}
           checked={themeMode === 'light'}
