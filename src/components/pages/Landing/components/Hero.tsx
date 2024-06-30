@@ -27,7 +27,7 @@ const Hero: FC = () => {
     <Stack>
       <Stack
         sx={{
-          backgroundImage: `url(${HeroBackground})`,
+          backgroundImage: `url(${HeroBackground.src})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}

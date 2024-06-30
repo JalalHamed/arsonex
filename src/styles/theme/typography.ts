@@ -1,5 +1,4 @@
 const typography = {
-  fontFamily: 'YekanBakh',
   button: {
     textTransform: undefined,
   },
