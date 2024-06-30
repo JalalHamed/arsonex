@@ -1,5 +1,5 @@
+import { Icon } from '@/components/global';
 import { Stack, Typography } from '@mui/material';
-import { Icon } from 'components/global';
 import { FC } from 'react';
 import { FOOTER_LINKS, SOCIAL_MEDIAS } from '../constants';
 

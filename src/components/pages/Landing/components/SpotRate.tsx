@@ -1,3 +1,5 @@
+import { ContainedTabs, Icon } from '@/components/global';
+import { formatNumber } from '@/utils';
 import {
   Button,
   Paper,
@@ -13,9 +15,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
-import { ContainedTabs, Icon } from 'components/global';
 import { FC, useState } from 'react';
-import { formatNumber } from 'utils';
 import { SPOT_RATE_FILTERS, UNIT_PRICE } from '../constants';
 import MockData from '../mockdata.json';
 

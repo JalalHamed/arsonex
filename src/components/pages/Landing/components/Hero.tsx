@@ -5,9 +5,10 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
-import HeroBackground from 'assets/images/hero-background.jpg';
-import HeroImage from 'assets/images/hero-image.jpg';
+import Image from 'next/image';
 import { FC } from 'react';
+import HeroBackground from '/public/images/hero-background.jpg';
+import HeroImage from '/public/images/hero-image.jpg';
 
 const Hero: FC = () => {
   const { breakpoints } = useTheme();
@@ -26,7 +27,7 @@ const Hero: FC = () => {
     <Stack>
       <Stack
         sx={{
-          backgroundImage: `url(${HeroBackground})`,
+          backgroundImage: `url(${HeroBackground.src})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
@@ -66,7 +67,7 @@ const Hero: FC = () => {
         px={{ md: '60px', xs: '30px' }}
         mt={{ md: '-350px', xs: '-100px' }}
       >
-        <img
+        <Image
           src={HeroImage}
           alt='hero-image'
           style={{

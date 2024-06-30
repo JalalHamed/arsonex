@@ -1,3 +1,5 @@
+import { CustomSwitch, Icon } from '@/components/global';
+import { useThemeModeAtom } from '@/state';
 import {
   Button,
   Drawer,
@@ -6,9 +8,7 @@ import {
   Typography,
   useTheme,
 } from '@mui/material';
-import { CustomSwitch, Icon } from 'components/global';
 import { Dispatch, FC, SetStateAction } from 'react';
-import { useThemeModeAtom } from 'state';
 import { DRAWER_BUTTONS } from '../constants';
 
 const MobileDrawer: FC<{

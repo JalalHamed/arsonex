@@ -1,3 +1,5 @@
+import { CustomSwitch, Icon } from '@/components/global';
+import { useThemeModeAtom } from '@/state';
 import {
   Button,
   IconButton,
@@ -6,9 +8,7 @@ import {
   useMediaQuery,
   useTheme,
 } from '@mui/material';
-import { CustomSwitch, Icon } from 'components/global';
 import { Dispatch, FC, SetStateAction } from 'react';
-import { useThemeModeAtom } from 'state';
 import { NAVBAR_BUTTONS } from '../constants';
 
 const Navbar: FC<{ setIsDrawerOpen: Dispatch<SetStateAction<boolean>> }> = ({

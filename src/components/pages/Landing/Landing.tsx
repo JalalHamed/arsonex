@@ -1,5 +1,5 @@
+import { Layout } from '@/components/global';
 import { Stack } from '@mui/material';
-import { Layout } from 'components/global';
 import { FC, useState } from 'react';
 import { Drawer, Footer, Hero, Navbar, SpotRate } from './components';
 
